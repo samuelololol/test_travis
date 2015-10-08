@@ -1,5 +1,6 @@
 language: python
 python:
     - "2.7"
-script:
-    - python -m unittest -v mytest.TestMyNumber
+script: python -m unittest -v mytest.TestMyNumber
+notifications:
+    email: false
