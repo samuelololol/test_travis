@@ -6,3 +6,5 @@ python:
 #    - pip install pytest
 script:
     - python -m unittest -v mytest.TestMyNumber
+after_success:
+    - export TRAVIS_TEST_RESULT=$?
